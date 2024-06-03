@@ -20,6 +20,13 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.farewell-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
 #countdown {
     display: flex;
     justify-content: center;
