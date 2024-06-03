@@ -1,15 +1,17 @@
 function countdown(endDate) {
+    
     let days, hours, minutes, seconds;
-
     endDate = new Date(endDate).getTime();
-
+    console.log(endDate);
     if (isNaN(endDate)) {
+        console.log("isNaN");
         return;
     }
 
     setInterval(calculate, 1000);
 
     function calculate() {
+        console.log("go");
         let startDate = new Date().getTime();
 
         let timeRemaining = parseInt((endDate - startDate) / 1000);
@@ -37,5 +39,5 @@ function countdown(endDate) {
 }
 
 // 設置離職日期
-let endDate = "2024-6-14T18:00:00";
+let endDate = "2024-06-14 18:00:00";
 countdown(endDate);
