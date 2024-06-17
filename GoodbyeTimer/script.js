@@ -14,7 +14,7 @@ function countdown(endDate) {
         console.log("go");
         let startDate = new Date().getTime();
 
-        let timeRemaining = parseInt((endDate - startDate) / 1000);
+        let timeRemaining = parseInt((startDate - endDate) / 1000);
 
         if (timeRemaining >= 0) {
             days = parseInt(timeRemaining / 86400);
