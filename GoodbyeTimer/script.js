@@ -22,8 +22,14 @@ function countdown(endDate,reverse) {
         }
         
         if (timeRemaining >= 0) {
-            days = parseInt(timeRemaining / 86400);
-            timeRemaining = (timeRemaining % 86400);
+            
+            let dayCount = 86400;
+            let yearCount = dayCount * 365;
+
+            years = parseInt(timeRemaining / yearCount);
+            timeRemaining = (timeRemaining % yearCount);
+            days = parseInt(timeRemaining / dayCount);
+            timeRemaining = (timeRemaining % dayCount);
 
             hours = parseInt(timeRemaining / 3600);
             timeRemaining = (timeRemaining % 3600);
@@ -32,7 +38,11 @@ function countdown(endDate,reverse) {
             timeRemaining = (timeRemaining % 60);
 
             seconds = parseInt(timeRemaining);
-
+            
+            if(document.getElementById("years") != null)
+            {
+                document.getElementById("years").innerHTML = parseInt(years, 10);    
+            }
             document.getElementById("days").innerHTML = parseInt(days, 10);
             document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
             document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
