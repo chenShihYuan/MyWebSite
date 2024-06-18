@@ -1,4 +1,4 @@
-function countdown(endDate) {
+function countdown(endDate,reverse) {
     
     let days, hours, minutes, seconds;
     endDate = new Date(endDate).getTime();
@@ -11,11 +11,16 @@ function countdown(endDate) {
     setInterval(calculate, 1000);
 
     function calculate() {
-        console.log("go");
         let startDate = new Date().getTime();
-
-        let timeRemaining = parseInt((startDate - endDate) / 1000);
-
+        reverse = reverse || false;
+        let timeRemaining;
+        if(reverse) {
+            timeRemaining = parseInt((endDate - startDate) / 1000);
+        }
+        else {
+            timeRemaining = parseInt((startDate - endDate) / 1000);
+        }
+        
         if (timeRemaining >= 0) {
             days = parseInt(timeRemaining / 86400);
             timeRemaining = (timeRemaining % 86400);
@@ -37,7 +42,3 @@ function countdown(endDate) {
         }
     }
 }
-
-// 設置離職日期
-let endDate = "2024-06-14 18:00:00";
-countdown(endDate);
