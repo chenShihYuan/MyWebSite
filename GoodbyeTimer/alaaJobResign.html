@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>于翔離職計時器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>于翔離職計時器</h1>
+        <h2>從2024年03月01日已過了</h1>
+        <div id="countdown">
+            <div>
+                <span id="years"></span>
+                <span>年</span>
+            </div>
+            <div>
+                <span id="days"></span>
+                <span>天</span>
+            </div>
+            <div>
+                <span id="hours"></span>
+                <span>小時</span>
+            </div>
+            <div>
+                <span id="minutes"></span>
+                <span>分鐘</span>
+            </div>
+            <div>
+                <span id="seconds"></span>
+                <span>秒</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script >
+    // 設置離職日期
+    let endDate = "2024-03-01 18:00:00";
+    countdown(endDate);
+</script>
+</html>
