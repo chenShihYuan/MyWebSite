@@ -1,0 +1,180 @@
+
+
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>富邦魔咒 首頁</title>
+  <meta name="description" content="各位置的首頁：快速進入不同的計時器頁面">
+  <style>
+    :root {
+      --bg: #0f172a;        /* 背景深藍 */
+      --card: #111827;      /* 卡片底色 */
+      --text: #e5e7eb;      /* 文字 */
+      --muted: #94a3b8;     /* 次要文字 */
+      --accent: #22d3ee;    /* 強調色（目前僅保留以便之後擴充） */
+      --border: #1f2937;    /* 邊框色 */
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Hiragino Sans", "Microsoft JhengHei", Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 10% -10%, #1e293b 0%, var(--bg) 60%), var(--bg);
+      color: var(--text);
+    }
+    .header {
+      max-width: 960px;
+      margin: 56px auto 24px;
+      padding: 0 20px;
+    }
+    .header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing: 0.5px;
+    }
+    .header p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .grid {
+      max-width: 960px;
+      margin: 12px auto 64px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      display: block;
+      background: linear-gradient(180deg, #0b1220 0%, var(--card) 100%);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    .card:hover, .card:focus-visible {
+      transform: translateY(-2px);
+      border-color: #334155;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      outline: none;
+    }
+    .card .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .4px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #334155;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      margin: 4px 0 8px;
+      font-size: 20px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .footer {
+      max-width: 960px;
+      margin: 0 auto 48px;
+      padding: 0 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Goodbye Timer 首頁</h1>
+    <p>各位置入口。選一個進去。</p>
+  </header>
+
+  <main class="grid" role="list">
+    <!-- 卡片 1：戒菸計時器 -->
+    <a class="card" role="listitem" href="./StopSmoking.html" aria-label="前往 戒菸計時器">
+      <span class="badge">計時器</span>
+      <h2>戒菸計時器</h2>
+      <p>記錄與提醒，幫你撐過關鍵期。</p>
+    </a>
+
+    <!-- 卡片 2：永允離職計時器 -->
+    <a class="card" role="listitem" href="./YungyunJobResign.html" aria-label="前往 永允離職計時器">
+      <span class="badge">計時器</span>
+      <h2>永允離職計時器</h2>
+      <p>記錄參與富邦專案離職員工。</p>
+    </a>
+        <!-- 追加卡片：請貼在現有兩張卡片之後 -->
+    <a class="card" role="listitem" href="./alaaJobResign.html" aria-label="前往 于翔 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>于翔 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./GoobyeTimer.html" aria-label="前往 士麟 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>士麟 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./hankweiJobResign.html" aria-label="前往 建翰 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>建翰 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./JerryJobResign.html" aria-label="前往 Jerry 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>Jerry 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./JingfangJobResign.html" aria-label="前往 靖芳 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>靖芳 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./KimJobResign.html" aria-label="前往 Kim 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>Kim 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./SkeenJobResign.html" aria-label="前往 智豪 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>智豪 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./StarJobResign.html" aria-label="前往 星辰 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>星辰 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./xu3ru8u6JobResign.html" aria-label="前往 芷儀 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>芷儀 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+    
+    <a class="card" role="listitem" href="./YuhanJobResign.html" aria-label="前往 郁涵 離職計時器">
+        <span class="badge">計時器</span>
+        <h2>郁涵 離職計時器</h2>
+        <p>記錄參與富邦專案離職員工。</p>
+    </a>
+  </main>
+
+  <footer class="footer">
+    <span>若要新增其他位置，把這個檔案複製一段 <code>&lt;a class="card" ...&gt;</code> 區塊，改標題與連結即可。</span>
+  </footer>
+</body>
+</html>
